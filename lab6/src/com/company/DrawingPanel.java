@@ -25,7 +25,7 @@ public class DrawingPanel extends JPanel {
     }
 
     private void init() {
-        setPreferredSize(new Dimension(W, H)); //don’t use setSize. Why?
+        setPreferredSize(new Dimension(W, H));
         setBorder(BorderFactory.createEtchedBorder()); //creates a border around the canvas
         this.addMouseListener(new MouseAdapter() {
             @Override
@@ -67,7 +67,7 @@ public class DrawingPanel extends JPanel {
     }
 
     @Override
-    public void update(Graphics g) { } //this function updates the canvas. without it, nothing can be drawn
+    public void update(Graphics g) { } //this function updates the canvas. without it, nothing can be drawn.
 
     @Override
     protected void paintComponent(Graphics g) { // this function simply draws the image

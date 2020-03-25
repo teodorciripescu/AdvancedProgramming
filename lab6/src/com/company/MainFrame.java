@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
     DrawingPanel canvas;
 
     public MainFrame() {
-        super("My Drawing Application");
+        super("Lab 6 - My Drawing Application");
         init();
     }
 
@@ -22,8 +22,7 @@ public class MainFrame extends JFrame {
         configPanel = new ConfigPanel(this);
         controlPanel = new ControlPanel(this);
 
-        //arrange the components in the container (frame)
-        //JFrame uses a BorderLayout by default
+        //adding the components in the container
         add(canvas, BorderLayout.CENTER);
         add(configPanel, BorderLayout.NORTH);
         add(controlPanel, BorderLayout.SOUTH);
